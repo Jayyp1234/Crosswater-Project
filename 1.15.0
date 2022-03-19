@@ -1,0 +1,9 @@
+Collecting boto3
+  Using cached boto3-1.20.47-py3-none-any.whl (131 kB)
+Collecting s3transfer<0.6.0,>=0.5.0
+  Using cached s3transfer-0.5.1-py3-none-any.whl (79 kB)
+Collecting jmespath<1.0.0,>=0.7.1
+  Using cached jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting botocore<1.24.0,>=1.23.47
+  Downloading botocore-1.23.47-py3-none-any.whl (8.5 MB)
+     ----                                     1.0/8.5 MB 5.1 kB/s eta 0:24:28
