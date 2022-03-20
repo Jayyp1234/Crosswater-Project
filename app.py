@@ -1,4 +1,4 @@
-from shopnstuff import app
+from crosswaterproject import app
 
 if __name__ == '__main__':
     app.run(debug=True)

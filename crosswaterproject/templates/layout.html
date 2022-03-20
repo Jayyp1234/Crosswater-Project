@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:type" content="product">
-    <meta property="og:site_name" content="ShopNStuff Nigeria">
-    <meta property="og:title" content="ShopNStuff Nigeria | Online Shopping for Groceries, Appliances &amp; More!">
-    <meta property="og:description" content="ShopNStuff Nigeria the #1 Online store in Nigeria - Shop Online for All Kinds of Products &amp; Enjoy Great Prices And Offers ✓ Best prices in Nigeria ✓ Online shop you can trust ✓ Order now and enjoy pay on delivery! ">
-    <meta property="og:url" content="/">
-    <meta property="og:image" content="{{ url_for('static', filename='image/shopnstuff3.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+  <link rel="canonical" href="http://globexia.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Globexia">
+  <meta property="og:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+  <meta property="og:url" content="http://globexia.com/">
+  <meta property="og:site_name" content="Globexia Limited">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+  <meta name="twitter:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Globexia">
+    <meta property="og:image" content="{{ url_for('static', filename='image/logo.png') }}">
     <meta property="og:locale" content="en_NG">
-    <meta name="title" content="ShopNStuff Nigeria | Online Shopping for Groceries, Appliances &amp; More!">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="ShopNStuff Nigeria the #1 Online store in Nigeria - Shop Online for All Kinds of Products &amp; Enjoy Great Prices And Offers ✓ Best prices in Nigeria ✓ Online shop you can trust ✓ Order now and enjoy pay on delivery! ">
-    <link rel="canonical" href="https://www.jumia.com.ng/">
-    
     <meta property="fb:app_id" content="728795990650684">
     <meta property="fb:pages" content="291297097615087">
-    <link rel="icon" href="{{ url_for('static', filename='image/shopnstuff3.png') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='image/logo.png') }}" />
     <meta name="theme-color" content="#25a8ed">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
@@ -24,88 +26,36 @@
     <link rel="preload" href="{{ url_for('static', filename='fonts/OpenSans-Regular.ttf') }}" as='font' crossorigin='anonymous'>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
-    {% if title %}
-        <title>S&S - {{ title }}</title>
-    {% else %}
-        <title> S&S </title>
-    {% endif %}
+    <title>Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Globexia</title>
 </head>
 <body>
-  <style>
-    .btn-primary {
-    color: #fff !important;
-    background-color: #3167eb !important;
-    border-color: #3167eb !important;
-}
-.page-link {
-    color: #3167eb;
-}
-.page-item.active .page-link {
-    background-color: #3167eb !important;
-    border-color: #3167eb !important;
-    color: white !important;
-}
-  </style>
-  <div style="background-color: #16455b;color: white;font-size: 12px;font-weight: 600;">
-    <a href="/seller-login" style="padding-left: 5px;color: white !important;">Sell On ShopNStuff</a>
-    </div>
-<nav>
-    <div class="navbar-container">
-        <div class="div">
-    <a href="/"><h4 style="color: white;"> ShopNStuff</h4></a>
-    
-    
-    <form class="form" style="position: relative;" action="/search">
-  <input type="text" placeholder="Search products & brands" name="">
-  <i class="icon-search" style="position: absolute;top:50%;color:blue;right: 3%;cursor: pointer;"></i>
-    </form>
-        </div>
-        <div class="div phase1" style="padding-top: 4px;">
-        <a href="#"><span> <element>Cart</element><i class="icon-shopping-cart"></i></span></a>
-        {% if current_user.is_authenticated %}
-        <span class="login-but" style="display: block;position: relative;">
-            <span> Profile<element> <i class="icon-user"></i></element> </span>
-            <ul style="z-index: 999999999;" class="class-drop">
-                {% if current_user.role == 'admin' %}
-                  <li> <a href="admin" class="drop-links"><i class="icon-user"></i>Admin Dashboard </a></li>
-                {% endif %}
-                {% if current_user.role == 'seller' %}
-                  <li> <a href="seller/dashboard" class="drop-links"><i class="icon-user"></i>Seller Dashboard </a></li>
-                {% endif %}
-                <li> <a href="#" class="drop-links"><i class="icon-user-circle"></i>Your Account </a></li>
-                <li> <a href="#" class="drop-links"><i class='icon-inbox'> </i> Your Orders</a></li>
-                <li> <a href="#" class="drop-links"><i class='icon-heart'> </i> Shortlist</a></li>
-                <li> <a href="#" class="drop-links"><i class='icon-hand-o-right'> </i>SD Cash</a></li><hr>
-              
-                <li>
-                    <a href="/logout" style="background-color:#25a8ed;width: 90%; text-align: center;padding: 10px;margin: auto;display:flex;justify-content: center;"> Logout</a>
-                </li>
-                {% else %}
-                <span class="login-but" style="display: block;position: relative;">
-                  <span> Login <element> <i class="icon-user"></i></element> </span>
-                  <ul style="z-index: 999999999;" class="class-drop">
-                <li>
-                  <a href="/login" style="background-color:#25a8ed;width: 90%; text-align: center;padding: 10px;margin: auto;display:flex;justify-content: center;"> Login</a>
-                </li>
-                {% endif %}
-            </ul>
-            </span> 
-        </div>
-    </div>                        
-    <form class="index-form form" action="search" >
-  <input type="text" placeholder="Search products & brands" name="" style="width: 100%;">
-  <i class="icon-search" style="position: absolute;top:50%;color:blue;right: 3%;cursor: pointer;"></i>
-    </form>
-</nav>
-
-
  <!-- Spinner Start -->
  <div id="spinner" style="z-index: 99999999;" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+  <div class="spinner-border " style="width: 3rem; height: 3rem;color:#FDB33F;" role="status">
       
   </div>
 </div>
+<nav style="display: flex;"> 
+  <a href="/" ><img src="{{ url_for('static', filename='image/HORIZONTAL LOGO LOCKUP TRANSPARENT-01 1.png') }}" /> </a>
+  
+  <div class="navigation">
+    <a href="/" class="active"> Home </a>
+    <a href="/about" > About </a>
+    <a href="/product" > Product </a>
+    <a href="/contact" > Contact </a>
+    <a href="/form" > <span class="nav-body"> Send A Request </span></a>
+    <a href="#"><i class="icon-search" ></i></a>
+  </div>
+  <i class="icon-menu" style="font-size: 20px;color: #FDB33F;"></i>
+  <div class="navigation2">
+    <a href="/" class="active"> Home </a>
+    <a href="/about" > About </a>
+    <a href="/product" > Product </a>
+    <a href="/contact" > Contact </a>
+    <a href="/form" > <span class="nav-body"> Send A Request </span></a>
+    <a href="#"><i class="icon-search" ></i></a>
+  </div>
+</nav>
 <!-- Spinner End -->
 {% block container %}
 
@@ -113,12 +63,12 @@
 
 
    
-<footer class="container-fluid" style="min-height: 270px;width: 100%;background-color: #16455b;color:white;padding-top: 40px;">
+<footer class="container-fluid" style="min-height: 270px;width: 100%;background-color: #14365A;color:white;padding-top: 40px;">
     <div class="row no-margin" style="padding:10px">
         <div class="col-sm-6 col-md-3">
             <div class="footer-body">
-              <img src="{{ url_for('static', filename='image/Shop&Stuff.png')}}" style="width: 150px;height: 80px;"/>
-              <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+              <img src="{{ url_for('static', filename='image/image.png')}}" style="width: 170px;height: 80px;"/>
+              <span> We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.</span>
               <div>
                <a href="www.instagram.com"> <i class="icon-instagram" ></i> </a>
                <a href="www.twitter.com"> <i class="icon-twitter" ></i></a>
@@ -130,17 +80,18 @@
         <div class="col-sm-6 col-md-2">
             <ul>
               <li> <b> Company  </b> </li>
-              <li> <a href="#"> Blog</a> </li>
-              <li> <a href="#"> Careers</a> </li>
-              <li> <a href="#"> About Us</a> </li>
+              <li> <a href="#"> About</a> </li>
+              <li> <a href="#"> Mission</a> </li>
+              <li> <a href="#"> Vision</a> </li>
+              <li> <a href="#"> Career</a> </li>
             </ul>
         </div>
         <div class="col-sm-6 col-md-2">
             <ul>
               <li> <b> Product </b> </li>
-              <li> <a href="#"> Watch Demo</a> </li>
-              <li> <a href="#"> Term of Service</a> </li>
-              <li> <a href="#"> Privacy Policy</a> </li>
+              <li> <a href="#"> Agricultural commodities </a> </li>
+              <li> <a href="#"> Mining</a> </li>
+              <li> <a href="#"> Trade</a> </li>
             </ul>
         </div>
         <div class="col-sm-6 col-md-2">
@@ -165,19 +116,25 @@
         </div>
     </div>
     <hr style="border-top: 1px solid #435976;"/>
-  <small style="color:#a8aeba;text-align:center;font-size:12;line-height:1.1;display:block;padding:9px;">Copyright © 2022. ShopNStuff All rights reserved | Privacy policy | Refund and Cancellation Policy | Terms of Use | Cookies | Sitemap</small>
+  <small style="color:#a8aeba;text-align:center;font-size:12;line-height:1.1;display:block;padding:9px;">Copyright © 2022. Crosswater Project All rights reserved | Privacy policy | Refund and Cancellation Policy | Terms of Use | Cookies | Sitemap</small>
 </footer>  
 
 </body>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}" ></script>
 <script src="{{ url_for('static', filename='js/wow/wow.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/wow/main.js') }}"></script>
 
 <script>
     $('.icon-search').click(function(){
           $(this).parent('form').submit();
+    });
+    $('.icon-menu').click(function(){
+          $(this).next().slideToggle('slow');
+          $(this).next().css('display','grid')
+
     });
     	// Preloader
   $(window).on('load', function() {
