@@ -168,19 +168,28 @@
     <h2>Get to know us</h2>
     <div class="row">
         <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-box">
+            <a href="#" class="about-box" style="position: relative;display: block;">
                 <img src="{{ url_for('static', filename='image/Rectangle 7.png') }}" />
-            </div>
+                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
+                    <span style="line-height: 16px;display:block;font-weight: 700;">Who We Are</span>
+                </div>
+            </a>
         </div>
         <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="about-box">
+            <a href="#" class="about-box" style="position: relative;display: block;">
                 <img src="{{ url_for('static', filename='image/Rectangle 8.png') }}" />
-            </div>
+                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
+                    <span style="line-height: 16px;display:block;font-weight: 700;">Our Main Activities</span>
+                </div>
+            </a>
         </div>
         <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="about-box">
-                <img src="{{ url_for('static', filename='image/Rectangle 9.png') }}" />
-            </div>
+            <a href="#" class="about-box" style="position: relative;display: block;">
+                <img src="{{ url_for('static', filename='image/Rectangle 8.png') }}" />
+                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
+                    <span style="line-height: 16px;display:block;font-weight: 700;">Our core values</span>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -245,7 +254,7 @@
     $('.nava b').click(function(){
         $('.nava b').removeClass('active');
         $(this).addClass('active');
-        $('.bimbo').toggle();
+        $('.bimbo').toggleClass('jj');
     })
 </script>
 
