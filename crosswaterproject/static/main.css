@@ -309,3 +309,52 @@ footer button{
     padding: 8px;
     border-radius: 5px;
 }
+.faq-box{
+  box-shadow: 12px 12px 24px 12px #0c0c0c1a;
+    min-height: 300px;
+    width: 250px;
+    margin: auto;
+    position: relative;
+    text-align: center !important;
+}
+.faq-box b{
+  display: block;
+  margin: 20px;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+letter-spacing: 0.01em;
+text-align: center;
+color: #14365A;
+
+}
+.faq-box ul{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.faq-box span{
+  width: 50px;
+  height: 50px;
+  background-color: #FDB33F;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  top: -20px;
+  transform: translate(50%,0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+
+}
+
+@media all and (max-width:600px){
+  .faq-box{
+      width: 320px;
+      border-radius: 20px;
+      margin-bottom 30px;;
+  }
+}
