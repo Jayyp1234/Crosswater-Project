@@ -86,6 +86,50 @@ color: #222222;
 .navigation2{
   display: none;
 }
+.divi{
+  box-shadow: 12px 12px 24px 0px #0C0C0C1A;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: 15px;
+  line-height: 16px;
+  position: absolute;
+  top: 15%;
+  left: -10%;
+  background-color: white;
+}
+.divi2{
+  right: -10%;
+  left: 0;
+  z-index: 999;
+}
+.orgi-card{
+  background: conic-gradient(from 180deg at 50% 50%, rgba(187, 186, 184, 0.5) 0deg, #BBBAB8 180deg, rgba(187, 186, 184, 0.5) 360deg);
+  min-height: 150px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  left: 20px;
+  color:white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.orgi-card b{
+  margin-bottom: 7px;
+  display: block;
+}
+.bummer{
+  order: 1;
+}
+@media all and (max-width:992px){
+  .divi{
+    position: static;
+  }
+}
+@media all and (max-width:767px){
+  .bummer{
+    order: -1;
+  }
+}
 @media all and (max-width:720px){
   .navigation2 {
     display: none;
@@ -98,6 +142,7 @@ color: #222222;
 .navigation{
   display: none;
 }
+
   .icon-menu{
     display: block;
   }
