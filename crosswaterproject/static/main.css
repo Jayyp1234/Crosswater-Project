@@ -353,6 +353,40 @@ color: #14365A;
   .faq-box{
       width: 320px;
       border-radius: 20px;
-      margin-bottom 30px;
+      margin-bottom: 30px;
   }
+}
+#overview .nava{
+  width: 360px;
+  margin: auto;
+  height: 55px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #F3F3F3;
+  align-items: center;
+  justify-content: space-around;
+}
+.nava b{
+  cursor: pointer;
+}
+.nava .active{
+  padding: 10px 16px;
+  border-radius: 15px;
+  color: white;
+  background-color: #FDB33F;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 12%);
+}
+#overview .card{
+  padding: 0 !important;
+  margin-bottom: 20px;
+  box-shadow: 0 16px 16px -8px rgb(0 0 0 / 12%), 0 6px 4px -4px rgb(0 0 0 / 6%), 0 40px 34px -16px rgb(0 0 0 / 8%), 0 0 0 1px rgb(0 0 0 / 3%);
+}
+.card-text{
+  color: #333;
+    font-size: 0.97rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+.jj{
+  display: none;
 }

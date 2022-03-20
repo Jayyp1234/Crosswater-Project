@@ -50,6 +50,71 @@
 </div>
 <br><br>
 <!--How its works-->
+<div class="row container" id="overview" style="align-items: center;margin: auto;text-align: center;">
+    <div class="nava">
+        <b class="active">Agricultural Products</b>
+        <b>Mineral Products</b>
+    </div>
+    <br> 
+    <div class="row bimbo">
+        <span style="margin-top:20px;margin-bottom: 20px;">We export a broad range of agricultural products both locally & around the world.</span>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/Rectangle 5.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/Rectangle 5.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+            <img src="{{ url_for('static', filename='image/Rectangle 5.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management content.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+            <img src="{{ url_for('static', filename='image/Rectangle 5.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management</p>
+            </div>
+        </a>
+        
+        
+    </div>
+    <div class="row bimbo jj">
+        <span style="margin-top:20px;margin-bottom: 20px;display: block;">We export a broad range of mineral products both locally & around the world.</span>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management content.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Fumigation & Pest Management</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br><br>
+<!--How its works-->
 <div class="row container ikea" id="faq" style="align-items: center;margin: auto;text-align: center;">
     <h2>How It works</h2>
     <div class="row">
@@ -174,4 +239,14 @@
         <a href="/form" class="giing wow backInRight"> <span class="nav-body" style="color: white;"> Send A Request </span></a>
 
 </div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>
+    $('.nava b').click(function(){
+        $('.nava b').removeClass('active');
+        $(this).addClass('active');
+        $('.bimbo').toggle();
+    })
+</script>
+
 {% endblock %}
