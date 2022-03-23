@@ -9,6 +9,9 @@ import array, os, json
 def home():
     return render_template('landing/index.html')
   
+@app.route("/about") 
+def about():
+    return render_template('landing/about.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

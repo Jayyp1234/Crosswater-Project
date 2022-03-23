@@ -61,22 +61,42 @@
 {% endblock %}
 
 
-   
+<div class="container-fluid aviator">
+  <div class="container">
+    <ul style="display: flex;justify-content: space-between;">
+      <li style="display: grid; color:white"> 
+        <span style="
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        "> Join to our Newsletter </span>
+        <span style="
+        color: #EAECF0;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;">We’ll send you a nice letter once per week. No spam.</span> 
+      </li>
+      <li> 
+        <form>
+          <input type="input" placeholder="Enter Your Email"/>
+          <button>Get Started</button> 
+        </form>
+        </li>
+    </ul>
+  </div>
+</div>
+
 <footer class="container-fluid" style="min-height: 270px;width: 100%;background-color: #14365A;color:white;padding-top: 40px;">
     <div class="row no-margin" style="padding:10px">
         <div class="col-sm-6 col-md-3">
-            <div class="footer-body">
-              <img src="{{ url_for('static', filename='image/image.png')}}" style="width: 170px;height: 80px;"/>
+            <div class="footer-body" style="max-width: 195px;">
+              <img src="{{ url_for('static', filename='image/HORIZONTAL LOGO LOCKUP TRANSPARENT-01 2.png')}}" style="width: 195px;height: auto;"/>
               <span> We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.</span>
-              <div>
-               <a href="www.instagram.com"> <i class="icon-instagram" ></i> </a>
-               <a href="www.twitter.com"> <i class="icon-twitter" ></i></a>
-               <a href="www.linkeldn.com"> <i class="icon-linkedin" ></i></a>
-               <a href="www.facebook.com">  <i class="icon-facebook" ></i></a>
-              </div> 
             </div>
         </div>
-        <div class="col-sm-6 col-md-2">
+        <div class="col-sm-6 col-md-3">
             <ul>
               <li> <b> Company  </b> </li>
               <li> <a href="#"> About</a> </li>
@@ -85,7 +105,7 @@
               <li> <a href="#"> Career</a> </li>
             </ul>
         </div>
-        <div class="col-sm-6 col-md-2">
+        <div class="col-sm-6 col-md-3">
             <ul>
               <li> <b> Product </b> </li>
               <li> <a href="#"> Agricultural commodities </a> </li>
@@ -93,7 +113,7 @@
               <li> <a href="#"> Trade</a> </li>
             </ul>
         </div>
-        <div class="col-sm-6 col-md-2">
+        <div class="col-sm-6 col-md-3">
             <ul>
               <li> <b> Help & Support </b> </li>
               <li> <a href="#"> Report Bug</a> </li>
@@ -101,23 +121,80 @@
               <li> <a href="#"> Contact Support</a> </li>
             </ul>
         </div>
-        <div class="col-sm-6 col-md-3">
-            <ul>
-              <li> <a href="#"> Subscribe to our Newsletter </a> </li>
-              <li> 
-                <form style="position:relative">
-                  <i class="icon-envelope"></i>
-                  <input type="input" placeholder="Enter Email Address"/>
-                  <button>Get Started</button> 
-                </form>
-                </li>
-            </ul>
-        </div>
+        
     </div>
     <hr style="border-top: 1px solid #435976;"/>
-  <small style="color:#a8aeba;text-align:center;font-size:12;line-height:1.1;display:block;padding:9px;">Copyright © 2022. Crosswater Project All rights reserved | Privacy policy | Refund and Cancellation Policy | Terms of Use | Cookies | Sitemap</small>
+    <div class="footer-stamp" style="">
+      <small style="color:#a8aeba;text-align:center;font-size:12;line-height:1.1;display:block;padding:9px;">© 2022. Crosswater Project All rights reserved </small>
+      <div class="diver" style="display: flex;align-items: center;justify-content: center;">
+        <a href="www.instagram.com"> <i class="icon-instagram" ></i> </a>
+        <a href="www.twitter.com"> <i class="icon-twitter" ></i></a>
+        <a href="www.linkeldn.com"> <i class="icon-linkedin" ></i></a>
+        <a href="www.facebook.com">  <i class="icon-facebook" ></i></a>
+       </div> 
+    </div>
+  
 </footer>  
-
+<style>
+  .col-md-3.col-sm-6{
+    padding-left: 40px;
+  }
+  li form input{
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 90%;
+  }
+  li form button{
+    background-color: #FDB33F;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 90%;
+  }
+  .footer-stamp{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;display: flex;justify-content: space-between;
+  }
+  .footer-stamp div a{
+    margin-right: 20px;
+  }
+  .aviator{
+    background-color: #101828;min-height: 95px;display: flex;align-items: center;
+  }
+  @media all and (max-width:767px){
+    .aviator{
+      min-height: 110px;
+    }
+    .aviator ul{
+     margin-bottom: 25px;
+      display: grid !important;
+    }
+    .aviator ul li{
+      margin-top: 25px;
+    }
+    .aviator form input{
+      width: calc(100% - 120px) !important;
+    }
+    .col-md-3.col-sm-6{
+    padding-left: 0px;
+  }
+  }
+  @media all and (max-width:560px){
+    .footer-stamp{
+      display: grid;
+      justify-content: center;
+      
+    }
+    .footer-body{
+      max-width: 100% !important;
+    }
+  }
+</style>
 </body>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
