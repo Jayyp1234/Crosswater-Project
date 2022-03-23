@@ -1,255 +1,246 @@
 {% extends 'layout.html' %}
 {% block container %}
 <style>
-    .row {
-    --bs-gutter-x: 0.9rem !important;
+    .about {
+    font-weight: 500;
+    color: #FDB33F;
+    }
+    .ikea2 .col-md-4{
+        min-height: 180px;
+    }.ikea h2, .ikea2 h2{
+        color: #14365A;
     }
 </style>
-<div class="row container" style="align-items: center;margin: auto;">
-    <div class="col-md-6">
-        <img class="wow fadeInLeftBig" src="{{ url_for('static', filename='image/Website_Img-removebg 1.png') }}" style="width: 100%;"/>
-    </div>
-    <div class="col-md-6 body2 wow fadeInRightBig">
-        <h2>We Provide the Best Service</h2>
-        <br>
-        <span> We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.</span>
-        <br>
-        <br>
-        <a href="/form" > <span class="nav-body" style="color: white;"> Send A Request </span></a>
-    </div>
-</div>
-<br>
-<div class="row container ikea" id="product" style="align-items: center;margin: auto;">
-    <small>Our Products</small>
-    <h2>The right Quality and Price for every Buyer.</h2>
-    <div class="row">
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <img src="{{ url_for('static', filename='image/Frame 8.svg') }}" />
-            <br>
-            <p>We guarantee consistent delivery of 
-                high-quality goods to businesses whoneed 
-                them all over the world. </p>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/Frame 9.svg') }}" />
-            <br>
-            <p>We help international trading businessesto 
-                succeed by exporting and or trading the 
-                commodities they need, offering expert global  trade services including imports, due diligence checks, and consulting.</p>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-            <img src="{{ url_for('static', filename='image/Frame 10.svg') }}" />
-            <br>
-            <p>Our goal is to draw upon research and 
-                experience from what has previously worked
-                 and has made the world’s top global 
-                companies go to great heights.</p>
-        </div>
-    </div>
-
-</div>
-<br><br>
-<!--How its works-->
-<div class="row container" id="overview" style="align-items: center;margin: auto;text-align: center;">
-    <div class="nava">
-        <b class="active">Agricultural Products</b>
-        <b>Mineral Products</b>
-    </div>
-    <br> 
-    <div class="row bimbo">
-        <span style="margin-top:20px;margin-bottom: 20px;">We export a broad range of agricultural products both locally & around the world.</span>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-            <img src="{{ url_for('static', filename='image/seaseme.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Sesame seed.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/sheabutter.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Shea butter.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-            <img src="{{ url_for('static', filename='image/Dried-ginger.jpeg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Dry Split Ginger.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-            <img src="{{ url_for('static', filename='image/cashew-nut.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Raw Cashew Nuts</p>
-            </div>
-        </a>
-    </div>
-    <br>
-    <a href="/form" class="bimbo" style="margin-top:15px;"> <span class="nav-body" style="color: white;"> View More </span></a>
-    <div class="row bimbo jj">
-        <span style="margin-top:20px;margin-bottom: 20px;display: block;">We export a broad range of mineral products both locally & around the world.</span>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-            <img src="{{ url_for('static', filename='image/litium.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Lithium Ore.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/lepidolite.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Muscovite Mica.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-            <img src="{{ url_for('static', filename='image/Lead-Ore.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Lead ore.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/copper_ore.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Copper ore.</p>
-            </div>
-        </a>
-    </div>
-    <a href="/form" class="bimbo jj" style="margin-top:15px;"> <span class="nav-body" style="color: white;"> View More </span></a>
-</div>
-<br><br>
-<!--How its works-->
-<div class="row container ikea" id="faq" style="align-items: center;margin: auto;text-align: center;">
-    <h2>How It works</h2>
-    <div class="row">
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="faq-box">
-                <span>1</span>
-                <br>
-                <b>Shipping time</b>
-                <br>
-                <ul>
-                    <li>25-35 days after con. L/C</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="faq-box">
-                <span>2</span>
-                <br>
-                <b>Trade Process</b>
-                <br>
-                <ul>
-                    <li>25-35 days after con. L/C</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="faq-box">
-                <span>3</span>
-                <br>
-                <b style="display: block;">Expected shipping 
-                    documents</b>
-                <ul>
-                    <li>Bill of Lading</li>
-                    <li>Certificate of Origin</li>
-                    <li>SGS Inspection Certificate</li>
-                    <li>Phytosanitary Certificate</li>    
-                    <li>Fumigation Certificate</li> 
-                    <li>Commercial Invoice</li>  
-                    <li>Parking List</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <span style="margin-top:15px;margin-bottom: 15px;">For more information on all our products.</span>
-    <a href="/form" class="wow backInRight"> <span class="nav-body" style="color: white;"> Contact Us </span></a>
-</div>
-<br><br>
-<!--About Us-->
-<div class="row container ikea" id="about" style="align-items: center;margin: auto;">
+<div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
     <small>ABOUT US</small>
-    <h2>Get to know us</h2>
-    <div class="row">
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <a href="#" class="about-box" style="position: relative;display: block;">
-                <img src="{{ url_for('static', filename='image/Rectangle 7.png') }}" />
-                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
-                    <span style="line-height: 16px;display:block;font-weight: 700;">Who We Are</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-            <a href="#" class="about-box" style="position: relative;display: block;">
-                <img src="{{ url_for('static', filename='image/Rectangle 8.png') }}" />
-                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
-                    <span style="line-height: 16px;display:block;font-weight: 700;">Our Main Activities</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-            <a href="#" class="about-box" style="position: relative;display: block;">
-                <img src="{{ url_for('static', filename='image/Rectangle 9.png') }}" />
-                <div class="orgi-card" style="right:0;background: none;min-height: 0;left: 0;transform: translate(10px, 10px);white-space: nowrap;">
-                    <span style="line-height: 16px;display:block;font-weight: 700;">Our core values</span>
-                </div>
-            </a>
-        </div>
-    </div>
-
+    <h2>About the Company</h2>
+    <span style="margin-bottom: 15px;">Learn more about the company and the team behind it.</span>
 </div>
 <br><br>
 <!-- The Organisation-->
 <div class="row container ikea" id="organisation" style="align-items: center;margin: auto;">
-    <small>THE ORGANISATION</small>
-    <h2>Voice From The Organization</h2>
     <div class="row" style="margin-bottom: 25px;">
-        <div class="col-md-5 wow fadeInLeftBig" style="position: relative;">
-            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" style="width: 100%;border-radius: 20px;"/>
-            <div class="orgi-card wow bounceInUp" data-wow-delay="0.6s">
-                <h3 style="text-align: left;">Damilola Orafidiya</h3>
-                <b>Managing Director</b>
-                <span style="line-height: 16px;display:block;">An avid enterpreneur with expertise in commercial
-                    law & small business development.</span>
-            </div>
+        <div class="col-md-6 wow fadeInLeftBig" >
+            <img src="{{ url_for('static', filename='image/Image (1).png') }}" style="width: 100%;border-radius: 20px;"/>
         </div>
-        <div class="col-md-7 wow fadeInRightBig " data-wow-delay="0.3s" style="position: relative;"> 
-            <div class="divi">
-                “<span style="color: #FDB33F;">Strong client ethics</span>, providing a tailored service for your business.
-                We give expert advice, we also continuously supply, agricultural 
-                products, solid mineral, to 54+ ports located around the world
-                based on established and trusted methodologies.” 
+        <div class="col-md-6 wow fadeInRightBig " data-wow-delay="0.3s"> 
+            <br><br>
+            <b style="color: #6941C6;">We're Hiring!</b>
+            <h2 class="yiyo">We’re only just getting started on our journey</h2>
+            <div class="row">
+                <div class="kiok col-6"> 
+                    <h1>400+</h1>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="kiok col-6"> 
+                    <h1>600%</h1>
+                    <span>Return on investment</span>
+                </div>
+                <div class="kiok col-6"> 
+                    <h1>10k</h1>
+                    <span>Global downloads</span>
+                </div>
+                <div class="kiok col-6"> 
+                    <h1>200+</h1>
+                    <span>5-star reviews</span>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-7 wow fadeInLeftBig " data-wow-delay="0.3s" style="position: relative;"> 
-            <div class="divi divi2">
-                “<span style="color: #FDB33F;">Strong client ethics</span>, providing a tailored service for your business.
-                We give expert advice, we also continuously supply, agricultural 
-                products, solid mineral, to 54+ ports located around the world
-                based on established and trusted methodologies.” 
+</div>
+<div class="row container-fluid ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <span style="margin-bottom: 15px;">From startups to the world’s largest companies</span>
+    <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo.png') }}" />
+        </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (1).png') }}" />
+        </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (2).png') }}" />
+        </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (3).png') }}" />
+        </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (4).png') }}" />
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="row container ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <b style="color: #6941C6;">We're Hiring!</b>
+    <h2>Meet our team</h2>
+    <span style="margin-bottom: 15px;">Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do you best work.</span>
+    
+    <div class="row bibo" style="margin-top: 50px;">
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.1s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
             </div>
         </div>
-        <div class="col-md-5 wow bummer fadeInRightBig" style="position: relative;">
-            <img src="{{ url_for('static', filename='image/Rectangle 4.jpg') }}" style="width: 100%;border-radius: 20px;"/>
-            <div class="orgi-card wow bounceInUp" data-wow-delay="0.6s">
-                <h3 style="text-align: left;">Damilola Orafidiya</h3>
-                <b>Managing Director</b>
-                <span style="line-height: 16px;display:block;">An avid enterpreneur with expertise in commercial
-                    law & small business development.</span>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.2s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.3s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.4s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.1s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.2s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.3s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.4s">
+            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
+                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
+                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
+                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
+                <br>
+                <div class="grouper">
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
+                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <br><br>
-<!--Want the best bang -->
-<div style="position: relative;" class="end-body">
-    <img src="{{ url_for('static', filename='image/Rectangle 6.png') }}" style="width: 100%;"/>
-    <h1 class="wow backInDown">Want the best bang 
-        for your buck?</h1>
-        <a href="/form" class="giing wow backInRight"> <span class="nav-body" style="color: white;"> Send A Request </span></a>
-
+<div class="row container ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <small>OUR VALUES</small>
+    <h2>How we work at Untitled</h2>
+    <span style="margin-bottom: 15px;">Our shared values keep us connected and guide us as one team.</span>
+    
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.1s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon.png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Care about our team</b>
+                <span style="color:#667085;font-size:13px">Understand what matters to our employees. Give them what they need to do their best work.</span>
+            </div>
+        </div>
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.2s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon (1).png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Be excellent to each other</b>
+                <span style="color:#667085;font-size:13px">No games. No bullshit. We rely on our peers to improve. Be open, honest and kind.</span>
+            </div>
+        </div>
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.3s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon (2).png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Pride in what we do</b>
+                <span style="color:#667085;font-size:13px">Value quality and integrity in everything we do. At all times. No exceptions.</span>
+            </div>
+        </div>
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.4s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon (3).png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Don't #!&$ the customer</b>
+                <span style="color:#667085;font-size:13px">Understand customers' stated and unstated needs. Make them wildly successful.</span>
+            </div>
+        </div>
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.5s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon (4).png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Do the impossible</b>
+                <span style="color:#667085;font-size:13px">Be energized by difficult problems. Revel in unknowns. Ask "Why?", but always question, "Why not?"</span>
+            </div>
+        </div>
+        <div class="col-md-4  wow fadeInUp" data-wow-delay="0.6s">
+            <div style="display: grid;justify-content: center;text-align: center;">
+                <img src="{{ url_for('static', filename='image/Featured icon (5).png') }}" style="width: 40px;margin: auto;"/>
+                <b style="color:#101828;font-weight: 500;">Sweat the small stuff</b>
+                <span style="color:#667085;font-size:13px">We believe the best products come from the best attention to detail. Sweat the small stuff.</span>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<br><br>
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script>
     $('.nava b').click(function(){
