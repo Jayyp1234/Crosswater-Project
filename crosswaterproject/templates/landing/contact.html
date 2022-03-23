@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block container %}
+<style>
+    .contact {
+    font-weight: 500;
+    color: #FDB33F;
+    }
+    
+</style>
+<div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <small>CONTACT US</small>
+    <h2>Get In Touch With Us</h2>
+    <span style="margin-bottom: 15px;">We’d love to hear from you. Please fill out this form.</span>
+</div>
+<br><br>
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>
+    $('.nava b').click(function(){
+        $('.nava b').removeClass('active');
+        $(this).addClass('active');
+        $('.bimbo').toggleClass('jj');
+    })
+</script>
+
+{% endblock %}

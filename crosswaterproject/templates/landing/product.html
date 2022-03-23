@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+{% block container %}
+<style>
+    .product {
+    font-weight: 500;
+    color: #FDB33F;
+    }
+    #overview .nava {
+    width: 217px;
+    }
+</style>
+<div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <small>PRODUCTS</small>
+    <h2>Get In Touch With Us</h2>
+    <span style="margin-bottom: 15px;">We’d love to hear from you. Please fill out this form.</span>
+</div>
+<br><br>
+<div class="row container" id="overview" style="align-items: center;margin: auto;text-align: center;">
+    <div class="nava">
+        <b class="active">Agricultural Products</b>
+    </div>
+    <br> 
+    <div class="row bimbo">
+        <span style="margin-top:20px;margin-bottom: 20px;">We export a broad range of agricultural products both locally & around the world.</span>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/seaseme.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Sesame seed.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/sheabutter.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Shea butter.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+            <img src="{{ url_for('static', filename='image/Dried-ginger.jpeg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Dry Split Ginger.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+            <img src="{{ url_for('static', filename='image/cashew-nut.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Raw Cashew Nuts</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/hib.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Dry Hibiscus Flower.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/tigernut.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Tigernut.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+            <img src="{{ url_for('static', filename='image/cocoa.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Cocoa Beans.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+            <img src="{{ url_for('static', filename='image/peanut.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Peanuts</p>
+            
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+            <img src="{{ url_for('static', filename='image/blackstone.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Black Stone Flower</p>
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="nava" style="width: 190px; margin-top: 30px;">
+        <b class="active">Mineral Products</b>
+    </div>
+    <div class="row bimbo">
+        <span style="margin-top:20px;margin-bottom: 20px;display: block;">We export a broad range of mineral products both locally & around the world.</span>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/litium.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lithium Ore.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/lepidolite.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Muscovite Mica.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <img src="{{ url_for('static', filename='image/Lead-Ore.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Lead ore.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="{{ url_for('static', filename='image/copper_ore.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Copper ore.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="{{ url_for('static', filename='image/zinc.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Zinc Ore.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <img src="{{ url_for('static', filename='image/mica.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Manganese Mica.</p>
+            </div>
+        </a>
+        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <img src="{{ url_for('static', filename='image/gem.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Gemstones.</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br><br>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>
+    $('.nava b').click(function(){
+        $('.nava b').removeClass('active');
+        $(this).addClass('active');
+        $('.bimbo').toggleClass('jj');
+    })
+</script>
+
+{% endblock %}

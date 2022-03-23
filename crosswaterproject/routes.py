@@ -13,6 +13,16 @@ def home():
 def about():
     return render_template('landing/about.html')
 
+
+@app.route("/product") 
+def product():
+    return render_template('landing/product.html')
+
+@app.route("/contact") 
+def contact():
+    return render_template('landing/contact.html')
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('error/error.html', title='Page Not Found'), 404
