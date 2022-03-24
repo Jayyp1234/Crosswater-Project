@@ -1,10 +1,6 @@
 {% extends 'layout.html' %}
 {% block container %}
 <style>
-    .contact {
-    font-weight: 500;
-    color: #FDB33F;
-    }
     label{
         font-weight: 500;
         font-size: 14px;
@@ -14,8 +10,8 @@
 </style>
 <div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
     <small>CONTACT US</small>
-    <h2>Get In Touch</h2>
-    <span style="margin-bottom: 15px;color:#667085;font-weight: 400;">We’d love to hear from you. Please fill out this form.</span>
+    <h2>You Too Can Invest With Us Per Export Transaction</h2>
+    <span style="margin-bottom: 15px;color:#667085;font-weight: 400;">Please fill in the KYC form below and we will be in touch to discuss your investment</span>
 </div>
 <br>
 
@@ -35,17 +31,30 @@
                 </div>
             </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
+        
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Phone Number</label>
           <input type="text" class="form-control" id="exampleInputPassword" placeholder="+234 800 000-0000">
         </div>
         <div class="mb-3">
-            <label for="message1" class="form-label">Message</label>
+            <label for="businessName" class="form-label">Business Name</label>
+            <input type="text" class="form-control" id="businessName" placeholder="Business Name">
+        </div>
+        <div class="mb-3">
+            <label for="website" class="form-label">Your Website</label>
+            <input type="text" class="form-control" id="website" placeholder="Website (if any)">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="office_address" class="form-label">Office Address</label>
+            <input type="text" class="form-control" id="office_address" placeholder="Office address">
+        </div>
+        <div class="mb-3">
+            <label for="message1" class="form-label">Why do you want to invest in export transactions with Crosswater Project ?</label>
             <textarea style="min-height: 200px;" class="form-control" id="message1"> </textarea>
           </div>
         <div class="mb-3 form-check">
@@ -56,29 +65,7 @@
       </form>
       <br>
 </div>
-<div class="row container" style="margin: auto;">
-    <iframe style="border-radius: 20px;" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3220.222727780778!2d3.3884618346152604!3d6.450658353034089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sReinsurance%20Building%20Marina%2C%20Lagos%20Island!5e0!3m2!1sen!2sng!4v1648132303532!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-<br><br>
-<div class="row container">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4" style="text-align:center;">
-        <h6 class="dfbdf">Support</h6>
-        <small class="huhuh">Our friendly team is here to help.</small>
-        <a href="#" class="kihj">Info@crosswaterltd.com</a>
-    </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4" style="text-align:center;">
-        <h6 class="dfbdf">Phone</h6>
-        <small class="huhuh">Mon-Fri from 8am to 5pm.</small>
-        <a href="#" class="kihj">+234 80000000000</a>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<br><br>
-<div class="container">
-    <img class="img img-fluid" style="border-radius: 20px;" src="{{ url_for('static', filename='image/contater.png') }}" />
-</div>
+
 <div class="row container" style="padding:30px 10px;">
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
@@ -91,4 +78,13 @@
         <span class="kkik">12th Floor Reinsurance Building Marina, Lagos Island,Nigeria</span>
     </div>
 </div>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>
+    $('.nava b').click(function(){
+        $('.nava b').removeClass('active');
+        $(this).addClass('active');
+        $('.bimbo').toggleClass('jj');
+    })
+</script>
+
 {% endblock %}

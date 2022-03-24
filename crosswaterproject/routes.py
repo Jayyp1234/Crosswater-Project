@@ -22,6 +22,9 @@ def product():
 def contact():
     return render_template('landing/contact.html')
 
+@app.route("/request") 
+def request():
+    return render_template('landing/request.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

@@ -136,7 +136,7 @@ color: #222222;
     right: 0;
     width: 100%;
     top: 60px;
-    background-color: white;
+    background-color: #ffffffbf;
 }
 .navigation{
   display: none;
@@ -424,4 +424,61 @@ font-size: 18px;
 line-height: 28px;
 color: #101828;
 font-size: 95%;
+}
+.bhin{
+  font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #8D8585;
+}
+.jji{
+  font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: -0.02em;
+color: #14365A
+}
+.kkik{
+  font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #222222;
+display: block;
+}
+.nhih{
+  font-weight: 500;
+font-size: 17px;
+line-height: 27px;
+color: #14365A;
+}
+iframe{
+  width: 100%;
+  height: 450px;
+}
+@media all and (max-width:600px){
+  iframe{
+    height: 250px;
+  }
+}
+.dfbdf{
+  font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+text-align: center;
+color: #101828;
+}
+.huhuh{
+  font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #667085;
+display: block;
+}
+.kihj{
+  font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #FDB33F
 }

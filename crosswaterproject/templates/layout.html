@@ -34,7 +34,7 @@
       
   </div>
 </div>
-<nav style="display: flex;"> 
+<nav style="display: flex;" class="sticky-top"> 
   <a href="/" ><img src="{{ url_for('static', filename='image/HORIZONTAL LOGO LOCKUP TRANSPARENT-01 1.png') }}" /> </a>
   
   <div class="navigation">
@@ -42,16 +42,16 @@
     <a href="/about" class="about" > About </a>
     <a href="/product" class="product"> Product </a>
     <a href="/contact" class="contact"> Contact </a>
-    <a href="/form" > <span class="nav-body"> Send A Request </span></a>
+    <a href="/request" > <span class="nav-body"> Send A Request </span></a>
     <a href="#"><i class="icon-search" ></i></a>
   </div>
   <i class="icon-menu" style="font-size: 20px;color: #FDB33F;"></i>
   <div class="navigation2">
-    <a href="/" class="active"> Home </a>
-    <a href="/about" > About </a>
-    <a href="/product" > Product </a>
-    <a href="/contact" > Contact </a>
-    <a href="/form" > <span class="nav-body"> Send A Request </span></a>
+    <a href="/" class="home"> Home </a>
+    <a href="/about" class="about" > About </a>
+    <a href="/product" class="product"> Product </a>
+    <a href="/contact" class="contact"> Contact </a>
+    <a href="/request" > <span class="nav-body"> Send A Request </span></a>
     <a href="#"><i class="icon-search" ></i></a>
   </div>
 </nav>
@@ -99,17 +99,17 @@
         <div class="col-sm-6 col-md-3">
             <ul>
               <li> <b> Company  </b> </li>
-              <li> <a href="#"> About</a> </li>
-              <li> <a href="#"> Mission</a> </li>
-              <li> <a href="#"> Vision</a> </li>
+              <li> <a href="/about"> About</a> </li>
+              <li> <a href=""> Mission</a> </li>
+              <li> <a href="/about#value"> Values</a> </li>
               <li> <a href="#"> Career</a> </li>
             </ul>
         </div>
         <div class="col-sm-6 col-md-3">
             <ul>
               <li> <b> Product </b> </li>
-              <li> <a href="#"> Agricultural commodities </a> </li>
-              <li> <a href="#"> Mining</a> </li>
+              <li> <a href="/product"> Agricultural commodities </a> </li>
+              <li> <a href="/product#mining"> Mining commodities</a> </li>
               <li> <a href="#"> Trade</a> </li>
             </ul>
         </div>
