@@ -25,6 +25,14 @@ def contact():
 @app.route("/request") 
 def request():
     return render_template('landing/request.html')
+    
+@app.route("/report") 
+def report():
+    return render_template('landing/report.html')
+
+@app.route("/feedback") 
+def feedback():
+    return render_template('landing/feedback.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

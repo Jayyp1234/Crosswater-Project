@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+{% block container %}
+<style>
+    label{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #344054;
+    }
+</style>
+<div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <h2>Feedback</h2>
+    <span style="margin-bottom: 15px;color:#667085;font-weight: 400;">Send us your best ideas, we want to hear them!.</span>
+</div>
+<br>
+
+<div class="row container" style="margin: auto;">
+    <form class="col-md-6" style="margin: auto;margin-bottom: 30px;">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Title">
+                </div>
+        <div class="mb-3">
+            <label for="message1" class="form-label">Details</label>
+            <textarea style="min-height: 200px;" class="form-control" id="message1" placeholder="Please Share a Little Details about your Idea"></textarea>
+          </div>
+        <button type="submit" class="btn" style="background-color: #FDB33F;display: flex;width: 100%;color: white;font-size: 14px;justify-content: center;">Submit</button>
+      </form>
+      <br>
+</div>
+
+<div class="row container" style="padding:30px 10px;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+        <small class="bhin">Our Location</small>
+        <h1 class="jji">Visit Our Office</h1>
+        <span class="kkik">Find us at our location</span>
+    </div>
+    <div class="col-sm-3">
+        <b class="nhih">Nigeria</b><br>
+        <span class="kkik">12th Floor Reinsurance Building Marina, Lagos Island,Nigeria</span>
+    </div>
+</div>
+{% endblock %}
