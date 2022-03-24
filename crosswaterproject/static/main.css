@@ -141,7 +141,9 @@ color: #222222;
 .navigation{
   display: none;
 }
-
+.row{
+  margin: auto;
+}
   .icon-menu{
     display: block;
   }
