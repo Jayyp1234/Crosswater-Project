@@ -484,3 +484,13 @@ line-height: 20px;
 text-align: center;
 color: #FDB33F
 }
+@media all and (max-width:480px){
+  .kiok h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #FDB33F;
+}
+}
