@@ -494,3 +494,6 @@ color: #FDB33F
     color: #FDB33F;
 }
 }
+nav a:hover{
+  color: #FDB33F !important;
+}
