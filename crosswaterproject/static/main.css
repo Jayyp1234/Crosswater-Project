@@ -497,3 +497,11 @@ color: #FDB33F
 nav a:hover{
   color: #FDB33F !important;
 }
+.bain{
+  width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #fdb33f;
+}
