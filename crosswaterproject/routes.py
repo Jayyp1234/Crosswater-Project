@@ -1,8 +1,8 @@
 from flask import render_template, url_for, flash, redirect, request
-from crosswaterproject import app,db
+from crosswaterproject import app,db,mail
 from werkzeug.utils import secure_filename
 import array, os, json
-
+from flask_mail import Message
 
 #Landing Page for Desktop View
 @app.route("/") 
@@ -18,8 +18,12 @@ def about():
 def product():
     return render_template('landing/product.html')
 
-@app.route("/contact") 
+@app.route("/contact", methods=["POST","GET"]) 
 def contact():
+    msg = Message("Hello",
+                  sender="livepusher8@gmail.com",
+                  recipients=["okekejohnpaul12@gmail.com"])
+    mail.send(msg)
     return render_template('landing/contact.html')
 
 @app.route("/request") 
