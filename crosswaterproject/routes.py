@@ -22,8 +22,6 @@ def product():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        print()
-        
         msg = Message("Message from {}".format(form.firstname), sender="livepusher8@gmail.com", recipients=["okekejohnpaul12@gmail.com"])
         msg.html = form.message.data
         mail.send(msg)
