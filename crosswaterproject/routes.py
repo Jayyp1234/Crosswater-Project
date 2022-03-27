@@ -1,5 +1,6 @@
-from flask import render_template, url_for, flash, redirect, request
+from flask import render_template, url_for, flash, redirect, request,send_from_directory
 from crosswaterproject import app,db,mail
+from crosswaterproject.forms import ContactForm
 from werkzeug.utils import secure_filename
 import array, os, json
 from flask_mail import Message
@@ -13,18 +14,21 @@ def home():
 def about():
     return render_template('landing/about.html')
 
-
 @app.route("/product") 
 def product():
     return render_template('landing/product.html')
 
-@app.route("/contact", methods=["POST","GET"]) 
+@app.route("/contact", methods=['GET', 'POST']) 
 def contact():
-    msg = Message("Hello",
-                  sender="livepusher8@gmail.com",
-                  recipients=["okekejohnpaul12@gmail.com"])
-    mail.send(msg)
-    return render_template('landing/contact.html')
+    form = ContactForm()
+    if form.validate_on_submit():
+        print()
+        
+        msg = Message("Message from {}".format(form.firstname), sender="livepusher8@gmail.com", recipients=["okekejohnpaul12@gmail.com"])
+        msg.html = form.message.data
+        mail.send(msg)
+        flash('Message Sent', 'success')
+    return render_template('landing/contact.html', form = form)
 
 @app.route("/request") 
 def request():

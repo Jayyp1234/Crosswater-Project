@@ -16,40 +16,51 @@
     <small>CONTACT US</small>
     <h2>Get In Touch</h2>
     <span style="margin-bottom: 15px;color:#667085;font-weight: 400;">We’d love to hear from you. Please fill out this form.</span>
+    <br>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
 </div>
 <br>
 
 <div class="row container" style="margin: auto;">
-    <form class="col-md-6" style="margin: auto;margin-bottom: 30px;">
+    <form class="col-md-6" method="POST" style="margin: auto;margin-bottom: 30px;">
         <div class="row">
             <div class="col-sm-6" style="padding: 0;">
+                {{ form.hidden_tag() }}
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" name="first_name" id="exampleInputName" placeholder="First Name">
+                    {{form.firstname(class="form-control")}}
                 </div>
             </div>
             <div class="col-sm-6" style="padding: 0;">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" id="exampleInputName" placeholder="Last Name">
+                    {{form.lastname(class="form-control")}}
                 </div>
             </div>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+          {{form.email(class='form-control')}}
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-          <input type="text" class="form-control" id="exampleInputPassword" placeholder="+234 800 000-0000">
+          {{form.phone_number(class='form-control')}}
         </div>
         <div class="mb-3">
             <label for="message1" class="form-label">Message</label>
-            <textarea style="min-height: 200px;" class="form-control" id="message1"> </textarea>
+            {{form.message(class='form-control',style='min-height:200px')}}
           </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input type="checkbox"  class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">You agree to our friendly privacy policy.</label>
         </div>
         <button type="submit" class="btn" style="background-color: #FDB33F;display: flex;width: 100%;color: white;font-size: 14px;justify-content: center;">Submit</button>
