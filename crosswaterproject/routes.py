@@ -22,8 +22,8 @@ def product():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        msg = Message("Message from {}".format(form.firstname), sender="livepusher8@gmail.com", recipients=["okekejohnpaul12@gmail.com"])
-        msg.html = form.message.data
+        msg = Message("Contact Message from {}".format(form.firstname.data), sender="livepusher8@gmail.com", recipients=["okekejohnpaul12@gmail.com"])
+        msg.html = '<b> Name: </b>'+form.firstname.data+'<br><b> Phone Number: </b>'+form.phone_number.data+'<br>''<b> Email: </b>'+form.email.data+'<br> <b> Message: </b>'+form.message.data
         mail.send(msg)
         flash('Message Sent', 'success')
     return render_template('landing/contact.html', form = form)
