@@ -67,6 +67,38 @@ def feedback():
 def product_sesame():
     return render_template('product/sesame.html')
 
+@app.route("/product/shea") 
+def product_shea():
+    return render_template('product/shea.html')
+
+@app.route("/product/blackstone") 
+def product_blackstone():
+    return render_template('product/blackstone.html')
+
+@app.route("/product/cashew") 
+def product_cashew():
+    return render_template('product/cashew.html')
+
+@app.route("/product/cocoa") 
+def product_cocoa():
+    return render_template('product/cocoa.html')
+
+@app.route("/product/ginger") 
+def product_ginger():
+    return render_template('product/ginger.html')
+
+@app.route("/product/hibiscus") 
+def product_hibiscus():
+    return render_template('product/hibiscus.html')
+
+@app.route("/product/peanuts") 
+def product_peanuts():
+    return render_template('product/peanuts.html')
+
+@app.route("/product/tigernut") 
+def product_tigernut():
+    return render_template('product/tigernut.html')
+
 
 
 
