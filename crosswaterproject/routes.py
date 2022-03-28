@@ -1,10 +1,11 @@
 from flask import render_template, url_for, flash, redirect, request,send_from_directory
 from crosswaterproject import app,db,mail
-from crosswaterproject.forms import ContactForm
+from crosswaterproject.forms import ContactForm,ReportForm,FeedbackForm,RequestForm
 from werkzeug.utils import secure_filename
 import array, os, json
 from flask_mail import Message
 
+reciever = "okekejohnpaul12@gmail.com"
 #Landing Page for Desktop View
 @app.route("/") 
 def home():
@@ -22,23 +23,53 @@ def product():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        msg = Message("Contact Message from {}".format(form.firstname.data), sender="livepusher8@gmail.com", recipients=["okekejohnpaul12@gmail.com"])
-        msg.html = '<b> Name: </b>'+form.firstname.data+'<br><b> Phone Number: </b>'+form.phone_number.data+'<br>''<b> Email: </b>'+form.email.data+'<br> <b> Message: </b>'+form.message.data
+        msg = Message("Contact Message from {}".format(form.firstname.data), sender="livepusher8@gmail.com", recipients=[reciever])
+        msg.html = '<b> Name: </b>'+form.firstname.data+' '+form.lastname.data+'<br><b> Phone Number: </b>'+form.phone_number.data+'<br>''<b> Email: </b>'+form.email.data+'<br> <b> Message: </b>'+form.message.data
         mail.send(msg)
         flash('Message Sent', 'success')
     return render_template('landing/contact.html', form = form)
 
 @app.route("/request") 
 def request():
-    return render_template('landing/request.html')
+    form = RequestForm()
+    if form.validate_on_submit():
+        msg = Message("Request Message from {}".format(form.firstname.data), sender="livepusher8@gmail.com", recipients=[reciever])
+        msg.html = '<b> Name: </b>'+form.firstname.data+' '+form.lastname.data+'<br><b> Phone Number: </b>'+form.phone_number.data+'<br>''<b> Email: </b>'+form.email.data+'<br> <b> Message: </b>'+form.message.data
+        mail.send(msg)
+        flash('Message Sent', 'success')
+    return render_template('landing/request.html', form = form)
     
 @app.route("/report") 
 def report():
-    return render_template('landing/report.html')
+    form = ReportForm()
+    if form.validate_on_submit():
+        msg = Message("Report Message from {}".format(form.firstname.data), sender="livepusher8@gmail.com", recipients=[reciever])
+        msg.html = '<b> Name: </b>'+form.firstname.data+' '+form.lastname.data+'<br><b> Phone Number: </b>'+form.phone_number.data+'<br>''<b> Email: </b>'+form.email.data+'<br> <b> Report: </b>'+form.message.data
+        mail.send(msg)
+        flash('Message Sent', 'success')
+    return render_template('landing/report.html', form = form)
 
 @app.route("/feedback") 
 def feedback():
-    return render_template('landing/feedback.html')
+    form = FeedbackForm()
+    if form.validate_on_submit():
+        msg = Message("Feedback Message from Anonymous", sender="livepusher8@gmail.com", recipients=[reciever])
+        msg.html = '<b> Title: </b>'+form.title.data+'<br><b> Details: </b>'+form.message.data
+        mail.send(msg)
+        flash('Message Sent', 'success')
+    return render_template('landing/feedback.html', form = form)
+
+@app.route("/product/seasame") 
+def product_sesame():
+    return render_template('product/sesame.html')
+
+
+
+
+
+
+
+
 
 @app.errorhandler(404)
 def page_not_found(e):

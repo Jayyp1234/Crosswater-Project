@@ -1,0 +1,152 @@
+{% extends 'layout.html' %}
+{% block container %}
+<style>
+    .product {
+    font-weight: 500;
+    color: #FDB33F;
+    }
+    #overview .nava {
+    width: 217px;background-color: #fdb33f;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 12%);
+    }
+.nava .active {
+    box-shadow: none !important;
+}p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #667085;
+    font-family: system-ui;
+}ol li{
+    margin-left: 20px;
+    list-style-type: inherit !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #667085;
+}
+</style>
+<div class="row container-fluid ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;    background: #F5FAFF;backdrop-filter: blur(111.111px);padding-bottom: 20px;">
+    <small>PRODUCTS</small>
+    <h2>Get In Touch With Us</h2>
+    <span style="margin-bottom: 15px;">We’d love to hear from you. Please fill out this form.</span>
+    <li>
+    <form>
+        <input type="input" placeholder="Enter Your Email"/>
+        <button>Search</button> 
+    </form>
+</li>
+</div>
+<br>
+<div class="row container" style="align-items: center;margin: auto;">
+    <div class="col-md-6 body2 wow fadeInLeftBig">
+        <h2>Overview</h2>
+        <br>
+        <span>We are White & Black Sesame Seeds Exporters in Nigeria and can supply and export Sesame Seeds to Sesame Seeds buyers in Japan, China, India, Turkey, and much more places around the world.</span>
+        <br>
+        <br>
+    </div>
+    <div class="col-md-6">
+        <img class="wow fadeInRightBig" src="{{ url_for('static', filename='image/seaseme.jpg') }}" style="width: 100%;"/>
+    </div>
+</div>
+<br><br>
+<div class="row container" style="align-items: center;margin: auto;max-width: 650px;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.</p>
+    <br><br>
+    <h4 style="text-align: left;">Introduction</h4>
+    <br>
+    <p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+    <br>
+    <img class="wow fadeInRightBig" src="{{ url_for('static', filename='image/product.png') }}" style="width: 100%;"/>
+    <small>Image courtesy of Laura Davidson via Unsplash</small><br>
+    <div style="border-left: 2px solid #6941C6;margin-top: 15px;">
+        <blockquote style="font-style: italic;font-weight: 500;font-size: 22px;line-height: 30px;font-family:system-ui;">
+            “In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.” 
+        </blockquote>
+    </div>
+    <br><br>
+    <p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+    <br>
+    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+    <br>
+    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+    <br><br>
+    <h4 style="text-align: left;">Software and tools</h4>
+    <br>
+    <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.</p>
+    <br><br>
+    <h4 style="text-align: left;">Other resources</h4>
+    <br>
+    <br>
+    <p>Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.
+    </p>
+    <ol>
+        <li>Lectus id duis vitae porttitor enim gravida morbi.</li>
+        <li>Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.</li>
+        <li>Suspendisse maecenas ac donec scelerisque diam sed est duis purus.</li>
+    </ol>
+    <br>
+    <img class="wow fadeInRightBig" src="{{ url_for('static', filename='image/product1.png') }}" style="width: 100%;"/>
+    <small>Image courtesy of Laura Davidson via Unsplash</small><br>
+    <br>
+    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+    <br>
+    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+    <br><br>
+    <h4 style="text-align: left;">Conclusion</h4><br>
+    <br>
+    <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.
+    </p>
+    <br>
+   <p>Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus. </p>
+    <br>
+    <p>Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc tortor.</p>
+    <br>
+    <p>Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.</p>
+    <hr>
+    <div class="share" style="justify-content: space-between;margin-bottom: 25px;">
+        <b style="margin-top: 15px;">Share this post</b>
+        <div style="margin-top: 15px;">
+            <span><i class="icon-copy"></i> Copy link</span>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-linkedin"></i></a>
+        </div>
+    </div>
+    <br>
+</div>
+<style>
+    .share span, .share a{
+        color: #98A2B3;
+        border: 0.5px solid #98A2B3;
+        padding: 7px 10px;
+        border-radius: 7px;
+        font-size: 90%;
+        cursor: pointer;
+        transition: 0.6s all ease-in-out;
+    }.share{
+        display: flex;
+    }.share span:hover, .share a:hover{
+        background-color: #667085;
+        color: white;
+    }
+    @media all and (max-width:500px){
+        .share{
+            display: grid;
+        }
+    }
+</style>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>
+    $('.nava b').click(function(){
+        $('.nava b').removeClass('active');
+        $(this).addClass('active');
+        $('.bimbo').toggleClass('jj');
+    })
+</script>
+
+{% endblock %}
