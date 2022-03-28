@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Crosswater">
-  <meta property="og:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
-  <meta property="og:url" content="http://crosswater.com/">
-  <meta property="og:site_name" content="Crosswater Project Limited">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
-  <meta name="twitter:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Crosswater">
+    <meta name="description" content="We import and export petroleum products, mineral products, and agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Crosswater">
+    <meta property="og:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+    <meta property="og:url" content="http://crosswater.com/">
+    <meta property="og:site_name" content="Crosswater Project Limited">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="We import and export  agricultural products in Nigeria. We are the leading commodity trading company in Nigeria.">
+    <meta name="twitter:title" content="Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Crosswater">
     <meta property="og:image" content="{{ url_for('static', filename='image/logo.png') }}">
     <meta property="og:locale" content="en_NG">
     <meta property="fb:app_id" content="728795990650684">
@@ -28,6 +28,28 @@
     <title>Oil &amp; Gas, Solid Minerals, &amp; Agriculture Commodity Trading - Crosswater</title>
 </head>
 <body>
+ <style>
+   .dropdown-menu b{
+     display: block;
+     font-weight: 500;
+      font-size: 15px;
+      line-height: 20px !important;
+      color: #101828;
+      margin-bottom: 3px;
+    }.dropdown-menu b:hover{
+      color: #FDB33F;
+    }
+    .dropdown-menu span{
+      font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: block;
+    color: #667085;
+    }.dropdown-item.active, .dropdown-item:active {
+    background-color: #FDB33F !important;
+}
+ </style>
  <!-- Spinner Start -->
  <div id="spinner" style="z-index: 99999999;" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
   <div class="spinner-border " style="width: 3rem; height: 3rem;color:#FDB33F;" role="status">
@@ -39,8 +61,30 @@
   
   <div class="navigation">
     <a href="/" class="home"> Home </a>
-    <a href="/about" class="about" > About </a>
-    <a href="/product" class="product"> Product </a>
+    <a href="/about" class="about"> About </a>
+    <div class="dropdown" style="display: inline;">
+      <a href="/product" class="about dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Product
+      </a>
+      <div class="dropdown-menu p-4 text-muted" style="width: 300px;">
+        <div style="display:flex;">
+          <img src="{{ url_for('static', filename='image/agric.svg')}}" style="margin-right: 15px;"/>
+          <a href="#">
+            <b>Agricultural products</b>
+            <span>The latest industry news, updates and info.</span>
+          </a>
+        </div>
+        <br>
+        <div style="display:flex;">
+          <img src="{{ url_for('static', filename='image/mineral.svg')}}" style="margin-right: 20px;"/>
+          <a href="#">
+            <b>Mineral products</b>
+            <span>Learn how our customers are making big changes.</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
     <a href="/contact" class="contact"> Contact </a>
     <a href="/request" > <span class="nav-body"> Send A Request </span></a>
     <a href="#"><i class="icon-search" ></i></a>
@@ -49,7 +93,15 @@
   <div class="navigation2">
     <a href="/" class="home"> Home </a>
     <a href="/about" class="about" > About </a>
-    <a href="/product" class="product"> Product </a>
+    <div class="dropdown" style="display: inline-grid;width: 100%;">
+      <a href="/product" class="about dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Product
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Agricultural Products</button></li>
+        <li><button class="dropdown-item" type="button">Mineral Products</button></li>
+      </ul>
+    </div>
     <a href="/contact" class="contact"> Contact </a>
     <a href="/request" > <span class="nav-body"> Send A Request </span></a>
     <a href="#"><i class="icon-search" ></i></a>
