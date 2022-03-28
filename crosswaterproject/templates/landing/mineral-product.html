@@ -11,126 +11,105 @@
     }
 .nava .active {
     box-shadow: none !important;
+}.card-img-top {
+    padding: 6px;
+}.card-text{
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+font-size: 18px;
+color: #101828;
+}.card-text + span{
+  font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #667085;
+text-align:left;
+display: block;
 }
 </style>
-<div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
-    <small>PRODUCTS</small>
-    <h2>Get In Touch With Us</h2>
-    <span style="margin-bottom: 15px;">We’d love to hear from you. Please fill out this form.</span>
+<div class="row container-fluid ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 45px;    background: #F5FAFF;backdrop-filter: blur(111.111px);padding-bottom: 35px;">
+  <h2>Mineral Products</h2>
+  <span style="margin-bottom: 15px;">We facilitate the supply of a broad range of agricultural products to over 54+ countries around the world.</span>
+  <li>
+  <form>
+      <input type="input" placeholder="Enter Your Email"/>
+      <button>Search</button> 
+  </form>
+</li>
 </div>
-<br><br>
+<br>
 <div class="row container" id="overview" style="align-items: center;margin: auto;text-align: center;">
-    <div class="nava">
-        <b class="active">Agricultural Products</b>
-    </div>
-    <br> 
-    <div class="row bimbo">
-        <span style="margin-top:20px;margin-bottom: 20px;">We export a broad range of agricultural products both locally & around the world.</span>
-        <a href="/product/seasame" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-            <img src="{{ url_for('static', filename='image/seaseme.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Sesame seed.</p>
-            </div>
-        </a>
-        <a href="/product/shea" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/sheabutter.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Shea butter.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-            <img src="{{ url_for('static', filename='image/Dried-ginger.jpeg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Dry Split Ginger.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-            <img src="{{ url_for('static', filename='image/cashew-nut.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Raw Cashew Nuts</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-            <img src="{{ url_for('static', filename='image/hib.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Dry Hibiscus Flower.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ url_for('static', filename='image/tigernut.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Tigernut.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-            <img src="{{ url_for('static', filename='image/cocoa.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Cocoa Beans.</p>
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-            <img src="{{ url_for('static', filename='image/peanut.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Peanuts</p>
-            
-            </div>
-        </a>
-        <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-            <img src="{{ url_for('static', filename='image/blackstone.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Black Stone Flower</p>
-            </div>
-        </a>
-    </div>
+    
     <div id="mining"></div>
     <br>
     <br>
     <br>
-    <div class="nava" style="width: 190px; margin-top: 30px;">
-        <b class="active">Mineral Products</b>
-    </div>
     <div class="row bimbo">
-        <span style="margin-top:20px;margin-bottom: 20px;display: block;">We export a broad range of mineral products both locally & around the world.</span>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
             <img src="{{ url_for('static', filename='image/litium.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Lithium Ore.</p>
+              <p class="card-text">Lithium Ore. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
             <img src="{{ url_for('static', filename='image/lepidolite.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Muscovite Mica.</p>
+              <p class="card-text">Muscovite Mica. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
             <img src="{{ url_for('static', filename='image/Lead-Ore.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Lead ore.</p>
+              <p class="card-text">Lead ore. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
             <img src="{{ url_for('static', filename='image/copper_ore.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Copper ore.</p>
+              <p class="card-text">Copper ore. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
             <img src="{{ url_for('static', filename='image/zinc.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Zinc Ore.</p>
+              <p class="card-text">Zinc Ore. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
             <img src="{{ url_for('static', filename='image/mica.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Manganese Mica.</p>
+              <p class="card-text">Manganese Mica. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
         <a href="#" class="card col-md-4 col-sm-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
             <img src="{{ url_for('static', filename='image/gem.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Gemstones.</p>
+              <p class="card-text">Gemstones. <img src="{{ url_for('static', filename='image/icon-arrow.svg') }}" /></p>
+              <span>
+                Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.
+              </span>
             </div>
         </a>
     </div>
