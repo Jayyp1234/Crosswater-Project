@@ -99,7 +99,9 @@ def product_peanuts():
 def product_tigernut():
     return render_template('product/tigernut.html')
 
-
+@app.route("/privacy") 
+def privacy():
+    return render_template('landing/privacy.html')
 
 
 
