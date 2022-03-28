@@ -15,9 +15,13 @@ def home():
 def about():
     return render_template('landing/about.html')
 
-@app.route("/product") 
-def product():
-    return render_template('landing/product.html')
+@app.route("/agro-product") 
+def agro_product():
+    return render_template('landing/agric-product.html')
+
+@app.route("/mineral-product") 
+def mineral_product():
+    return render_template('landing/mineral-product.html')
 
 @app.route("/contact", methods=['GET', 'POST']) 
 def contact():

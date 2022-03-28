@@ -364,19 +364,28 @@ color: #14365A;
   height: 55px;
   display: flex;
   border-radius: 20px;
-  background-color: #F3F3F3;
   align-items: center;
   justify-content: space-around;
 }
 .nava b{
   cursor: pointer;
+  border: 1px solid #D0D5DD;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 10px 16px;
+  white-space: nowrap;
+  font-weight: 400;
 }
 .nava .active{
   padding: 10px 16px;
-  border-radius: 15px;
-  color: white;
-  background-color: #FDB33F;
-  box-shadow: 1px 2px 4px rgb(0 0 0 / 12%);
+  border-radius: 8px;
+  background-color: #14365A;
+border: 1px solid #7F56D9;
+box-sizing: border-box;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+color: white;
+
 }
 #overview .card{
   padding: 0 !important;
