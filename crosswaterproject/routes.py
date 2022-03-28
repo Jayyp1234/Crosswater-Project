@@ -33,7 +33,7 @@ def contact():
         flash('Message Sent', 'success')
     return render_template('landing/contact.html', form = form)
 
-@app.route("/request") 
+@app.route("/request", methods=['GET', 'POST']) 
 def request():
     form = RequestForm()
     if form.validate_on_submit():
@@ -43,7 +43,7 @@ def request():
         flash('Message Sent', 'success')
     return render_template('landing/request.html', form = form)
     
-@app.route("/report") 
+@app.route("/report", methods=['GET', 'POST']) 
 def report():
     form = ReportForm()
     if form.validate_on_submit():
@@ -53,7 +53,7 @@ def report():
         flash('Message Sent', 'success')
     return render_template('landing/report.html', form = form)
 
-@app.route("/feedback") 
+@app.route("/feedback", methods=['GET', 'POST']) 
 def feedback():
     form = FeedbackForm()
     if form.validate_on_submit():
