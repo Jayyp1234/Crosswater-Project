@@ -99,6 +99,39 @@ def product_peanuts():
 def product_tigernut():
     return render_template('product/tigernut.html')
 
+
+@app.route("/product/lithium") 
+def product_lithium():
+    return render_template('product/lithium.html')
+
+@app.route("/product/mica") 
+def product_mica():
+    return render_template('product/mica.html')
+
+@app.route("/product/lead") 
+def product_lead():
+    return render_template('product/lead.html')
+
+@app.route("/product/copper") 
+def product_copper():
+    return render_template('product/copper.html')
+
+@app.route("/product/zinc") 
+def product_zinc():
+    return render_template('product/zinc.html')
+
+@app.route("/product/manganese") 
+def product_manganese():
+    return render_template('product/manganese.html')
+
+@app.route("/product/gemstones") 
+def product_gemstones():
+    return render_template('product/gemstones.html')
+
+
+
+
+
 @app.route("/privacy") 
 def privacy():
     return render_template('landing/privacy.html')
