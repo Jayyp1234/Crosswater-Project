@@ -100,10 +100,23 @@
       <a href="/product" class="product dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Product
       </a>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <li><button class="dropdown-item" type="button"><a href="/agro-product">Agricultural Products</a></button></li>
-        <li><button class="dropdown-item" type="button"><a href="/mineral-product">Mineral Products</a></button></li>
-      </ul>
+      <div class="dropdown-menu p-4 text-muted" style="width: 300px;">
+        <div style="display:flex;">
+          <img src="{{ url_for('static', filename='image/agric.svg')}}" style="margin-right: 15px;"/>
+          <a href="/agro-product">
+            <b>Agricultural products</b>
+            <span>The latest industry news, updates and info.</span>
+          </a>
+        </div>
+        <br>
+        <div style="display:flex;">
+          <img src="{{ url_for('static', filename='image/mineral.svg')}}" style="margin-right: 20px;"/>
+          <a href="/mineral-product">
+            <b>Mineral products</b>
+            <span>Learn how our customers are making big changes.</span>
+          </a>
+        </div>
+      </div>
     </div>
     <a href="/contact" class="contact"> Contact </a>
     <a href="/request" > <span class="nav-body"> Send A Request </span></a>

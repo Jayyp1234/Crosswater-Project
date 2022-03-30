@@ -103,7 +103,9 @@ def product_tigernut():
 def privacy():
     return render_template('landing/privacy.html')
 
-
+@app.route("/search") 
+def search():
+    return render_template('search.html')
 
 
 
