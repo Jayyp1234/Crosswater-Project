@@ -110,10 +110,10 @@
     <div class="share" style="justify-content: space-between;margin-bottom: 25px;">
         <b style="margin-top: 15px;">Share this post</b>
         <div style="margin-top: 15px;">
-            <span><i class="icon-copy"></i> Copy link</span>
-            <a href="#"><i class="icon-twitter"></i></a>
-            <a href="#"><i class="icon-facebook"></i></a>
-            <a href="#"><i class="icon-linkedin"></i></a>
+            <span onclick="myFunction()" class="tool" data-bs-placement="top" title="Copied"><i class="icon-copy"></i> Copy link</span>
+            <a href="https://api.at.getsocial.io/s?channel=tw&url={{url}}/blackstone"><i class="icon-twitter"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url}}/blackstone"><i class="icon-facebook"></i></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{url}}/blackstone"><i class="icon-linkedin"></i></a>
         </div>
     </div>
     <br>
@@ -140,12 +140,22 @@
     }
 </style>
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 <script>
+    function myFunction() { 
+        navigator.clipboard.writeText('localhost/blackstone');
+    }
     $('.nava b').click(function(){
         $('.nava b').removeClass('active');
         $(this).addClass('active');
         $('.bimbo').toggleClass('jj');
+    });
+    $('.tool').click(function(){
+        alert('Link Copied');
     })
+    
 </script>
 
 {% endblock %}
