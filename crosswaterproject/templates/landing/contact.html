@@ -28,13 +28,22 @@
           {% endwith %}
 </div>
 <br>
-
+<style>
+    .ff{
+        margin-right: 10px;
+    }
+    @media all and (max-width:575px){
+        .ff{
+        margin-right: 0px;
+    }
+    }
+</style>
 <div class="row container" style="margin: auto;">
     <form class="col-md-6" method="POST" style="margin: auto;margin-bottom: 30px;">
-        <div class="row">
+        <div class="row" style="margin: 0;">
             <div class="col-sm-6" style="padding: 0;">
                 {{ form.hidden_tag() }}
-                <div class="mb-3">
+                <div class="mb-3 ff" >
                     <label for="exampleInputEmail1" class="form-label">First Name</label>
                     {{form.firstname(class="form-control")}}
                 </div>
@@ -59,10 +68,7 @@
             <label for="message1" class="form-label">Message</label>
             {{form.message(class='form-control',style='min-height:200px')}}
           </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox"  class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">You agree to our friendly <a href="/privacy" style="color: #FDB33F;"> privacy policy.</a></label>
-        </div>
+
         <button type="submit" class="btn" style="background-color: #FDB33F;display: flex;width: 100%;color: white;font-size: 14px;justify-content: center;">Submit</button>
       </form>
       <br>
@@ -93,8 +99,8 @@
 <div class="row container" style="padding:30px 10px;">
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
-        <small class="bhin">Our Location</small>
-        <h1 class="jji">Visit Our Office</h1>
+        <small class="bhin">Nigeria</small>
+        <h1 class="jji">The Office Address</h1>
         <span class="kkik">Find us at our location</span>
     </div>
     <div class="col-sm-3">

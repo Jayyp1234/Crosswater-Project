@@ -17,7 +17,7 @@
 
 <div class="row container" style="margin: auto;">
     <form class="col-md-6" method="POST" style="margin: auto;margin-bottom: 30px;">
-        <div class="row">
+        <div class="row" style="margin: 0;">
             <div class="col-sm-6" style="padding: 0;">
                 {{ form.hidden_tag() }}
                 <div class="mb-3">
@@ -57,10 +57,6 @@
             <label for="message1" class="form-label">Why do you want to invest in export transactions with Crosswater Project ?</label>
             {{form.message(class='form-control',style='min-height:200px')}}
           </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox"  class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">You agree to our friendly <a href="/privacy" style="color: #FDB33F;"> privacy policy.</a></label>
-        </div>
         <button type="submit" class="btn" style="background-color: #FDB33F;display: flex;width: 100%;color: white;font-size: 14px;justify-content: center;">Submit</button>
       </form>
       <br>

@@ -10,7 +10,6 @@
 </style>
 <div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
     <h2>REPORT</h2>
-    <span style="margin-bottom: 15px;color:#667085;font-weight: 400;">Crosswater Project is a platform thats committed to a better Internet. If you know about, or are a victim of, abuse on our site, you can use this form to report the problem to our SOC team; they are here to help.</span>
     <br>
     {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -54,10 +53,7 @@
             <label for="message1" class="form-label">Report</label>
             {{form.report(class='form-control',style='min-height:200px')}}
           </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox"  class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">You agree to our friendly <a href="/privacy" style="color: #FDB33F;"> privacy policy.</a></label>
-        </div>
+
         <button type="submit" class="btn" style="background-color: #FDB33F;display: flex;width: 100%;color: white;font-size: 14px;justify-content: center;">Submit</button>
       </form>
       <br>
