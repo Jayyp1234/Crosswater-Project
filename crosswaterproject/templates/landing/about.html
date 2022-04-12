@@ -9,6 +9,20 @@
         min-height: 180px;
     }.ikea h2, .ikea2 h2{
         color: #14365A;
+    }small{
+        margin-left:0px;
+    }.jjj img{
+        width: 50px !important;
+        margin-right: 10px;
+    }.jjj ul img{
+        width: 25px !important;
+    }.jjj span{
+        color: #667085;
+        font-size: 15px;
+    }.jjj ul li{
+        margin-bottom: 10px;
+    }.col-md-6{
+        margin-bottom: 20px;
     }
 </style>
 <div class="row container ikea" id="about" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
@@ -16,73 +30,10 @@
     <h2>About the Company</h2>
     <span style="margin-bottom: 15px;">At Crosswater we strive to prioritise our core values over everything else. We're competitively priced, and above all else, believe in building strategic long-term relationships with our clients.</span>
 </div>
-<br><br>
-<!-- The Organisation
-<div class="row container ikea" id="organisation" style="align-items: center;margin: auto;">
-    <div class="row" style="margin-bottom: 25px;">
-        <div class="col-md-6 wow fadeInLeftBig" >
-            <img src="{{ url_for('static', filename='image/Image (1).png') }}" style="width: 100%;border-radius: 20px;"/>
-        </div>
-        <div class="col-md-6 wow fadeInRightBig " data-wow-delay="0.3s">
-            <br>
-            <b style="color: #6941C6;">Facts</b>
-            <h2 class="yiyo">Company Facts</h2>
-            <ul>
-                <li><span class="bain"></span>An expert procurement & sales team</li>
-                <li> <span class="bain"></span>Offices & warehouses located within Nigeria</li>
-                <li> <span class="bain"></span> RC Number: 1729465</li>
-            </ul>
-            <br>
-            <b style="color: #6941C6;">Journey</b>
-            <h2 class="yiyo">We’re only just getting started on our journey</h2>
-            <div class="row">
-                <div class="kiok col-6"> 
-                    <h1>400+</h1>
-                    <span>Projects Completed</span>
-                </div>
-                <div class="kiok col-6"> 
-                    <h1>600%</h1>
-                    <span>Return on investment</span>
-                </div>
-                <div class="kiok col-6"> 
-                    <h1>10k</h1>
-                    <span>Global downloads</span>
-                </div>
-                <div class="kiok col-6"> 
-                    <h1>200+</h1>
-                    <span>5-star reviews</span>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<div class="row container-fluid ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
-    <span style="margin-bottom: 15px;">From startups to the world’s largest companies</span>
-    <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
-        <div style="width: 200px;margin-bottom: 15px;">
-            <img src="{{ url_for('static', filename='image/Company logo.png') }}" />
-        </div>
-        <div style="width: 200px;margin-bottom: 15px;">
-            <img src="{{ url_for('static', filename='image/Company logo (1).png') }}" />
-        </div>
-        <div style="width: 200px;margin-bottom: 15px;">
-            <img src="{{ url_for('static', filename='image/Company logo (2).png') }}" />
-        </div>
-        <div style="width: 200px;margin-bottom: 15px;">
-            <img src="{{ url_for('static', filename='image/Company logo (3).png') }}" />
-        </div>
-        <div style="width: 200px;margin-bottom: 15px;">
-            <img src="{{ url_for('static', filename='image/Company logo (4).png') }}" />
-        </div>
-    </div>
-</div>
-<br><br><br>
 <span id="value" ></span>
 <br><br>
 <div class="row container ikea2" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
-    <small>OUR VALUES</small>
-    <h2>How we work at Crosswater Project</h2>
+    <h2>Company Facts</h2>
     <span style="margin-bottom: 15px;">Our shared values keep us connected and guide us as one team.</span>
     
     <div class="row" style="margin-top: 50px;">
@@ -131,125 +82,84 @@
     </div>
 </div>
 <br><br>
-<div class="row container ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
-    <b style="color: #6941C6;">Team</b>
-    <h2>Meet our team</h2>
-    <span style="margin-bottom: 15px;">Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do you best work.</span>
-    
-    <div class="row bibo" style="margin-top: 50px;">
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.1s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
+<div class="row container-fluid ikea2" id="values" style="align-items: center;margin: auto;text-align: center;padding-top: 25px;">
+    <span style="margin-bottom: 15px;">From startups to the world’s largest companies</span>
+    <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo.png') }}" />
         </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.2s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (1).png') }}" />
         </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.3s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (2).png') }}" />
         </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.4s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (3).png') }}" />
         </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.1s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.2s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.3s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3  wow fadeInUp" data-wow-delay="0.4s">
-            <div style="display: grid;justify-content: center;text-align: center;background-color:#F9FAFB;border-radius: 15px;min-height: 250px;">
-                <img src="{{ url_for('static', filename='image/Avatar.png') }}" style="width: 60px;margin: auto;"/>
-                <b style="color:#101828;font-weight: 500;">Olivia Rhye</b>
-                <span style="color:#6941C6;font-size:15px">Founder & CEO</span>
-                <span style="color:#667085;font-size:14px">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</span>
-                <br>
-                <div class="grouper">
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon.svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (2).svg') }}" /></a>
-                    <a href="#"><img src="{{ url_for('static', filename='image/Social icon (1).svg') }}" /></a>
-                </div>
-            </div>
+        <div style="width: 200px;margin-bottom: 15px;">
+            <img src="{{ url_for('static', filename='image/Company logo (4).png') }}" />
         </div>
     </div>
+</div>
+<br><br><br>
+
+<div class="container-fluid ikea2" id="values" style="align-items: center;margin:0;text-align: center;padding: 0;">
+    <div class="row" style="margin: 0;align-items: center;">
+        <div class="col-md-6 jjj" style="text-align: start;padding-left: 5%;">
+
+            <img src="{{ url_for('static', filename='image/icon-check.svg') }}" />
+            <h2 style="text-align: left;font-size: 26px;margin-top: 10px;">What we offer</h2>
+            <span>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</span>
+            
+            <ul style="margin-top: 25px;;">
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+            </ul>
+        </div>
+        <div class="col-md-6" style="padding: 0;">
+            <img src="{{ url_for('static', filename='image/about.png') }}" style="width: 100%;"/>
+        </div>
+    </div>
+    <br><br>
+    <div class="row" style="margin: 0;align-items: center;">
+        
+        <div class="col-md-6" style="padding: 0;">
+            <img src="{{ url_for('static', filename='image/about.png') }}" style="width: 100%;"/>
+        </div>
+        <div class="col-md-6 jjj" style="text-align: start;padding-left: 5%;">
+
+            <img src="{{ url_for('static', filename='image/icon-check.svg') }}" />
+            <h2 style="text-align: left;font-size: 26px;margin-top: 10px;">Our main activities</h2>
+            <span>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</span>
+            
+            <ul style="margin-top: 25px;;">
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="row" style="margin: 0;align-items: center;">
+        <div class="col-md-6 jjj" style="text-align: start;padding-left: 5%;">
+
+            <img src="{{ url_for('static', filename='image/icon-check.svg') }}" />
+            <h2 style="text-align: left;font-size: 26px;margin-top: 10px;">Our core values</h2>
+            <span>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</span>
+            
+            <ul style="margin-top: 25px;;">
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+                <li><img src="{{ url_for('static', filename='image/message.svg') }}" /><span>All features and premium support</span></li>
+            </ul>
+        </div>
+        <div class="col-md-6" style="padding: 0;">
+            <img src="{{ url_for('static', filename='image/about.png') }}" style="width: 100%;"/>
+        </div>
+    </div>
+    <br><br>
 </div>
 
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
@@ -260,5 +170,5 @@
         $('.bimbo').toggleClass('jj');
     })
 </script>
--->
+
 {% endblock %}
